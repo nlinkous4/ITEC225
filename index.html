@@ -5,29 +5,86 @@
     <title>Calculation Form</title>
     <script src="https://kit.fontawesome.com/0a81c5cc27.js" crossorigin="anonymous"></script>
 
-    <title>Title</title>
 </head>
-
 <body>
-<i class="fas fa-calculator"><h2>Math Computation Form</h2></i>
-    <h5> Computing some value from taking in user inputs.</h5>
-    <hr />
+<i class="fas fa-calculator"><h2>Math Computation Form</h2><i class="fas fa-calculator">
+<h5> Computing some value from taking in user inputs.</h5>
+<hr />
 
-    <div>
-        <h2>Task 1: Physics - Force</h2>
-        <form id="form1" name="form1" action="index.html" method="get" target="_self">
-            <i class="fas fa-calculator">
-                <!-- Place your form with labels here-->
-                <p>Enter Mass:</p>
-                <label for="getMass"></label><input type="text" id="getMass" name = "mass" placeholder="Enter the mass" >
-                <p>Enter Acceleration:</p>
-                <label for="getAcceleration"></label><input type="text" id="getAcceleration" name = "acceleration" placeholder="Enter the acceleration" >
+<div>
+    <h2>Task 1: Physics - Force</h2>
+    <form id="form1" name="form1" action="index.html" method="get" target="_self">
+<i class="fas fa-calculator">
+        <!-- Place your form with labels here-->
+        <span>Enter Mass:</span>
+        <label for="getMass"></label><input type="text" id="getMass" name = "mass" placeholder="Enter the mass" >
+        <span>Enter Acceleration:</span>
+        <label for="getAcceleration"></label><input type="text" id="getAcceleration" name = "acceleration" placeholder="Enter the acceleration" >
 
-                <input type="button" id="computeButton" name="computeForce" value="Compute Force" onclick="computeForce()" />
+        <input type="button" id="computeButton" name="computeForce" value="Compute Force" onclick="computeForce()" />
 
 
-                <p id = "massOut" > </p>
-                <p id = "accelerationOut" > </p>
-                <p id = "forceOut" > </p>
+        <span id = "massOut" > </span>
+        <span id = "accelerationOut" > </span>
+        <span id = "forceOut" > </span>
+</i></form>;
+
+
+    <form id="form2" name="form2" action="index.html" method="get" target="_self">
+        <h2>Task 2: Physics - Velocity</h2>
+        <span>Enter Velocity:</span>
+        <label for="getVelocity"></label><input type="text" id="getVelocity" name = "initialVelocity" placeholder="Enter the initial velocity" >
+        <span>Enter Time:</span>
+        <label for="getTime"></label><input type="text" id="getTime" name = "time" placeholder="Enter time in seconds" >
+        <span>Enter Acceleration:</span>
+        <label for="getAcceleration2"></label><input type="text" id="getAcceleration2" name = "acceleration" placeholder="Enter the acceleration" >
+
+        <input type="button" id="computeD" name="computeDisplacement" value="Compute Displacement" onclick="computeAvgVelocity() />
+
+        <p id = "timeOut" > </p>
+        <p id = "velocityOut" > </p>
+        <span id = "acceleration1Out" > </span>
+        <span id = "displacement"></span>
+    </form>
+
+
+    <form id="form3" name="form3" action="index.html" method="get" target="_self">
+        <h2>Task 3: Math - Quadratic</h2>
+        <span>Enter Side A:</span>
+        <label for="getSideA"></label><input type="text" id="getSideA" name = "sideA" placeholder="Enter side A" >
+        <span>Enter Side B:</span>
+        <label for="getSideB"></label><input type="text" id="getSideB" name = "sideB" placeholder="Enter side B" >
+        <span>Enter Side C: </span>
+        <label for="getSideA"></label><input type="text" id="getSideC" name = "sideC" placeholder="Enter side C" >
+
+        <input type="button" id="computeA" name="computeAnswer" value="Compute Answer" onclick="computePrinciple()" />
+
+
+        <span id = "aOut" > </span>
+        <span id = "bOut" > </span>
+        <span id = "cOut" > </span>
+        <span id = "ans1Out"></span>
+        <span id = "ans2Out"> </span>
+    </form>
+
+    <form id="form4" name="form4" action="index.html" method="get" target="_self">
+        <h2>Task 4: Finance - Payment</h2>
+        <span>Enter Payment Amount:</span>
+        <label for="getPMT"></label><input type="text" id="getPMT" name = "pmt" placeholder="Enter Payment" >
+        <span>Enter Interest Rate:</span>
+        <label for="getInt"></label><input type="text" id="getInt" name = "intRate" placeholder="Enter Interest Rate" >
+        <span>Enter Number of Payment Periods: </span>
+        <label for="getNumPay"></label><input type="text" id="getNumPay" name = "numPay" placeholder="Enter Number of Payments" >
+
+        <input type="button" id="computeP" name="computeP" value="Compute Payment" onclick="computePresentValue()" />
+
+
+        <span id = "pOut" > </span>
+        <span id = "rOut" > </span>
+        <span id = "nOut" > </span>
+        <span id = "pmtOut"></span>
+    </form>
+</div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
