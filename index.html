@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation Form</title>
+    <script src="https://kit.fontawesome.com/0a81c5cc27.js" crossorigin="anonymous"></script>
+
+    <title>Title</title>
+</head>
+
+<body>
+<i class="fas fa-calculator"><h2>Math Computation Form</h2></i>
+    <h5> Computing some value from taking in user inputs.</h5>
+    <hr />
+
+    <div>
+        <h2>Task 1: Physics - Force</h2>
+        <form id="form1" name="form1" action="index.html" method="get" target="_self">
+            <i class="fas fa-calculator">
+                <!-- Place your form with labels here-->
+                <p>Enter Mass:</p>
+                <label for="getMass"></label><input type="text" id="getMass" name = "mass" placeholder="Enter the mass" >
+                <p>Enter Acceleration:</p>
+                <label for="getAcceleration"></label><input type="text" id="getAcceleration" name = "acceleration" placeholder="Enter the acceleration" >
+
+                <input type="button" id="computeButton" name="computeForce" value="Compute Force" onclick="computeForce()" />
+
+
+                <p id = "massOut" > </p>
+                <p id = "accelerationOut" > </p>
+                <p id = "forceOut" > </p>
+</body>
+</html>
